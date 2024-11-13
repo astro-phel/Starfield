@@ -2,13 +2,12 @@ Particle[] particles = new Particle[300];
 void setup() {
   size(700, 700);
   background(0);
-  for (int i = 0; i < particles.length; i++){
+  for (int i = 0; i < particles.length; i++)
     if (i == 0) {
       particles[i] = new OddballParticle(mouseX, mouseY);
-    } else {
+    }else{
       particles[i] = new Particle(mouseX, mouseY);
     }
-  }
 }
 void draw(){
   fill(0, 30);
@@ -19,13 +18,12 @@ void draw(){
   }
 }
 void mousePressed(){
-  for (int i = 0; i < particles.length; i++) {
+  for (int i = 0; i < particles.length; i++)
     if (i == 0){
       particles[i] = new OddballParticle(mouseX, mouseY);
-    } else{
+    }else{
       particles[i] = new Particle(mouseX, mouseY);
     }
-  }
 }
 class Particle{
   double myX, myY, mySpeed, myAngle;
