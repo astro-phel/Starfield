@@ -3,7 +3,7 @@ int particlesX, particlesY;
 boolean particlesInitiated = false;
 
 void setup(){
-  size(500, 500);
+  size(700, 700);
   background(0);
   resetParticles();
 }
